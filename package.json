@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node boot"
+    "start": "node boot",
+    "cached": "ab -c 100 -n 5000 localhost:8000/cached",
+    "uncached": "ab -c 100 -n 5000 localhost:8000/uncached"
   },
   "author": "",
   "license": "ISC",
